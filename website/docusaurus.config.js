@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Badaso Posty Theme Documentation",
   tagline: "Official free theme for badaso post module",
-  url: "https://badaso-posty-theme.uatech.co.id",
+  url: "https://badaso-posty.uatech.co.id",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

@@ -23,4 +23,4 @@
 
 # Installation
 
-<a href="https://badaso-post-theme.uatech.co.id/getting-started/installation">Click here for installation and more documentation</a>
+<a href="https://badaso-posty.uatech.co.id/getting-started/installation">Click here for installation and more documentation</a>

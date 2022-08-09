@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders\Badaso\ManualGenerate;
+namespace Database\Seeders\Badaso\PostyTheme\ManualGenerate;
 
 use Exception;
 use Illuminate\Database\Seeder;

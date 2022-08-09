@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders\Badaso\ManualGenerate;
+namespace Database\Seeders\Badaso\PostyTheme\ManualGenerate;
 
 use Illuminate\Database\Seeder;
 use Uasoft\Badaso\Module\Post\Models\Category;

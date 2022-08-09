@@ -54,6 +54,11 @@ sidebar_position: 1
     ```
     php artisan db:seed --class="Database\Seeders\Badaso\PostyTheme\BadasoPostyThemeSeeder"
     ```
+
+1. (**Optional**) Run the command to generate for demo data for badaso-menit.
+    ```
+    php artisan db:seed --class="Database\Seeders\Badaso\PostyTheme\ManualGenerate\BadasoManualGenerateSeeder"
+    ```
     
 1. Add the plugins to your MIX_POST_URL_PREFIX to .env.
     ```

@@ -12,33 +12,33 @@ use Uasoft\Badaso\Module\Post\Models\Post;
 class BadasoPostsTableSeeder extends Seeder
 {
     /**
-     * Auto generated seed file
-     *
-     * @return void
+     * Auto generated seed file.
      *
      * @throws Exception
+     *
+     * @return void
      */
     public function run()
     {
         DB::beginTransaction();
+
         try {
             $user = User::whereHas('roles', function (Builder $query) {
                 return $query->where('name', 'administrator');
             })->first();
 
-            $posts = (array(
-                0 =>
-                array(
-                    'id' => 1,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 6,
-                    'title' => 'Top 10 System Design Interview Questions',
-                    'slug' => 'top-10-system-design-interview-questions',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<article>
+            $posts = ([
+                0 => [
+                    'id'               => 1,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 6,
+                    'title'            => 'Top 10 System Design Interview Questions',
+                    'slug'             => 'top-10-system-design-interview-questions',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<article>
 <section>
 <p id="7d94" data-selectable-paragraph="">Originally written by Educative co-founder, Fahim ul Haq</p>
 <p id="6b30" data-selectable-paragraph="">Over my 10 years as a senior software engineer and interviewer at Microsoft and Facebook, I&rsquo;ve worked with&nbsp;hundreds of applicants&nbsp;as they solve different system design problems.</p>
@@ -345,23 +345,22 @@ class BadasoPostsTableSeeder extends Seeder
 <p id="31e5" data-selectable-paragraph="">Happy learning!</p>
 </section>
 </article>',
-                    'thumbnail' => 'files/shares/top-10-system-design-interview-questions.png',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/top-10-system-design-interview-questions.png',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:22:08',
-                ),
-                1 =>
-                array(
-                    'id' => 2,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 6,
-                    'title' => 'Part 1. My notes for starting in the frontend development field',
-                    'slug' => 'part-1-my-notes-for-starting-in-the-frontend-development-field',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<section>
+                    'published_at'  => '2021-08-18 10:22:08',
+                ],
+                1 => [
+                    'id'               => 2,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 6,
+                    'title'            => 'Part 1. My notes for starting in the frontend development field',
+                    'slug'             => 'part-1-my-notes-for-starting-in-the-frontend-development-field',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<section>
 <div>
 <div>
 <p id="7a4f" data-selectable-paragraph="">I&rsquo;ve been meditating about starting to post Frontend and UI stuff for a while. But the main reason that pulled me back was that I&rsquo;m not a native English speaker and I was afraid of making grammar mistakes (that I probably will). However, I&rsquo;ve been in a hype of creativity and impertinence lately, so I&rsquo;ve decided to share it with the world !!</p>
@@ -445,23 +444,22 @@ class BadasoPostsTableSeeder extends Seeder
 </div>
 </div>
 </section>',
-                    'thumbnail' => 'https://miro.medium.com/max/1400/1*H60MwPV5col0pvlgZD0ZqQ.png',
-                    'published' => 1,
+                    'thumbnail'     => 'https://miro.medium.com/max/1400/1*H60MwPV5col0pvlgZD0ZqQ.png',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:22:57',
-                ),
-                2 =>
-                array(
-                    'id' => 3,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 7,
-                    'title' => 'Codility algorithm practice Lesson 3: Time Complexity, Task 1: Frog Jump — a Python approach',
-                    'slug' => 'codility-algorithm-practice-lesson-3-time-complexity-task-1-frog-jump-a-python-approach',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<p id="f771" data-selectable-paragraph="">Greetings, coders! I hope you&rsquo;ve enjoyed our&nbsp;<a href="https://medium.com/@deck451/codility-algorithm-practice-lesson-2-arrays-task-2-odd-occurrences-in-array-a-python-approach-ecfad7078e61" rel="noopener">last</a>&nbsp;task. Today we&rsquo;ll be tackling another fine point o<span id="rmm">f</span>&nbsp;algorithm development:&nbsp;time complexity. Time complexity is, in simple terms, the amount of time taken by an algorithm to run, expressed as a function of the size of the input. We determine / estimate the time complexity of an algorithm by counting the number of elementary operations performed by the algorithm, under the assumption that each elementary operation takes a fixed amount of time to perform. This way, the amount of time taken and the number of elementary operations performed are considered to differ by at most a constant factor.</p>
+                    'published_at'  => '2021-08-18 10:22:57',
+                ],
+                2 => [
+                    'id'               => 3,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 7,
+                    'title'            => 'Codility algorithm practice Lesson 3: Time Complexity, Task 1: Frog Jump — a Python approach',
+                    'slug'             => 'codility-algorithm-practice-lesson-3-time-complexity-task-1-frog-jump-a-python-approach',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<p id="f771" data-selectable-paragraph="">Greetings, coders! I hope you&rsquo;ve enjoyed our&nbsp;<a href="https://medium.com/@deck451/codility-algorithm-practice-lesson-2-arrays-task-2-odd-occurrences-in-array-a-python-approach-ecfad7078e61" rel="noopener">last</a>&nbsp;task. Today we&rsquo;ll be tackling another fine point o<span id="rmm">f</span>&nbsp;algorithm development:&nbsp;time complexity. Time complexity is, in simple terms, the amount of time taken by an algorithm to run, expressed as a function of the size of the input. We determine / estimate the time complexity of an algorithm by counting the number of elementary operations performed by the algorithm, under the assumption that each elementary operation takes a fixed amount of time to perform. This way, the amount of time taken and the number of elementary operations performed are considered to differ by at most a constant factor.</p>
 <p id="db08" data-selectable-paragraph="">Now, because an algorithm&rsquo;s running time varies among different inputs of the same size, a good practice would be to consider the worst-case time complexity. Less common and explicitly specified, some consider average-case time complexity instead.</p>
 <p id="4f88" data-selectable-paragraph="">Time complexity is typically expressed using the&nbsp;big O&nbsp;notation:&nbsp;O(n),&nbsp;O(n log n),&nbsp;O(n^a),&nbsp;O(2^n), etc.</p>
 <p id="4336" data-selectable-paragraph="">Without going into too much detail on the big O notation, it&rsquo;s enough to say we should always try to find the algorithm that features the best complexity function it can. Since there are many roads we can take from requirements to the software deliverable, we should always try to choose the most efficient road.</p>
@@ -480,23 +478,22 @@ class BadasoPostsTableSeeder extends Seeder
 <p id="7df8" data-selectable-paragraph="">Simple, right? This solution yields 100% score upon submission to Codility and the determined complexity is&nbsp;O(1), which stands for&nbsp;constant time complexity, meaning that whatever input arguments we&rsquo;re given in terms of X, Y and jump distance, the algorithm will always perform the very same number of elementary operations.</p>
 <p id="cd79" data-selectable-paragraph="">Remember: always, after writing / seeing / reviewing an algorithm that works, ask yourself this: is this the best algorithm for the task at hand? Always wonder and question. It&rsquo;s what drives us further on higher plains of knowledge.</p>
 <p id="128f" data-selectable-paragraph="">Next, we&rsquo;re gonna identify the&nbsp;<a href="https://medium.com/@deck451/codility-algorithm-practice-lesson-3-time-complexity-task-2-perm-missing-element-a-python-67c98523769" rel="noopener">missing element in a given permutation</a>. But for now, cheers and happy coding!</p>',
-                    'thumbnail' => 'files/shares/codility-algorithm-practice-lesson-3-time-complexity-task-1-frog-jump-a-python-approach.jpeg',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/codility-algorithm-practice-lesson-3-time-complexity-task-1-frog-jump-a-python-approach.jpeg',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:24:57',
-                ),
-                3 =>
-                array(
-                    'id' => 4,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 5,
-                    'title' => 'How do you make friends as an adult?',
-                    'slug' => 'how-do-you-make-friends-as-an-adult',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<section>
+                    'published_at'  => '2021-08-18 10:24:57',
+                ],
+                3 => [
+                    'id'               => 4,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 5,
+                    'title'            => 'How do you make friends as an adult?',
+                    'slug'             => 'how-do-you-make-friends-as-an-adult',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<section>
 <div>
 <div>
 <p id="f0c1" data-selectable-paragraph="">When I started writing this, I thought I&rsquo;d be complaining about how it&rsquo;s too hard to make friends as an adult. It is. I still don&rsquo;t know how to do it. But I also realized that I&rsquo;m so lucky I have a few excellent women in my life regardless of where they live. So here&rsquo;s to the women who knew me as an angsty teenager on a different continent who have been willing to reopen old conversations. The women I only knew from online profile pictures who&rsquo;ve supported me through leaving a faith and a marriage. The women I have recently met and connected with through writing.</p>
@@ -512,23 +509,22 @@ class BadasoPostsTableSeeder extends Seeder
 </div>
 </div>
 </section>',
-                    'thumbnail' => 'files/shares/how-do-you-make-friends-as-an-adult.jpeg',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/how-do-you-make-friends-as-an-adult.jpeg',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:27:27',
-                ),
-                4 =>
-                array(
-                    'id' => 5,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 5,
-                    'title' => 'The 10 Most Hated States in America in 2021',
-                    'slug' => 'the-10-most-hated-states-in-america-in-2021',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<article>
+                    'published_at'  => '2021-08-18 10:27:27',
+                ],
+                4 => [
+                    'id'               => 5,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 5,
+                    'title'            => 'The 10 Most Hated States in America in 2021',
+                    'slug'             => 'the-10-most-hated-states-in-america-in-2021',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<article>
 <div>
 <section>
 <div>
@@ -599,23 +595,22 @@ class BadasoPostsTableSeeder extends Seeder
 </div>
 </div>
 </div>',
-                    'thumbnail' => 'files/shares/the-10-most-hated-states-in-america-in-2021.jpeg',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/the-10-most-hated-states-in-america-in-2021.jpeg',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:36:15',
-                ),
-                5 =>
-                array(
-                    'id' => 6,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 3,
-                    'title' => 'How latte art in South Africa led to a job from hell in Oman',
-                    'slug' => 'how-latte-art-in-south-africa-led-to-a-job-from-hell-in-oman',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<div data-component="text-block">
+                    'published_at'  => '2021-08-18 10:36:15',
+                ],
+                5 => [
+                    'id'               => 6,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 3,
+                    'title'            => 'How latte art in South Africa led to a job from hell in Oman',
+                    'slug'             => 'how-latte-art-in-south-africa-led-to-a-job-from-hell-in-oman',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<div data-component="text-block">
 <div>
 <p>A young South African barista thought he had found the job of a lifetime in Oman, but ended up being held captive and made to work without pay - forcing family and friends to raise money to free him.</p>
 </div>
@@ -857,23 +852,22 @@ class BadasoPostsTableSeeder extends Seeder
 <p>"I am traumatised emotionally. I can\'t forget about it."</p>
 </div>
 </div>',
-                    'thumbnail' => 'files/shares/how-latte-art-in-south-africa-led-to-a-job-from-hell-in-oman.jpg',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/how-latte-art-in-south-africa-led-to-a-job-from-hell-in-oman.jpg',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:41:16',
-                ),
-                6 =>
-                array(
-                    'id' => 7,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 1,
-                    'title' => 'US left too quickly, says Afghanistan bank governor',
-                    'slug' => 'us-left-too-quickly-says-afghanistan-bank-governor',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<div data-component="text-block">
+                    'published_at'  => '2021-08-18 10:41:16',
+                ],
+                6 => [
+                    'id'               => 7,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 1,
+                    'title'            => 'US left too quickly, says Afghanistan bank governor',
+                    'slug'             => 'us-left-too-quickly-says-afghanistan-bank-governor',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<div data-component="text-block">
 <div>
 <p>The central bank governor who fled Afghanistan this weekend has told the BBC he wished the country had been left with more time to plan for the withdrawal of US troops.</p>
 </div>
@@ -965,23 +959,22 @@ class BadasoPostsTableSeeder extends Seeder
 <p>"That\'s going to in turn lead to higher inflation, pressure on the banking system, and in turn higher poverty rates," Mr Ahmady said.</p>
 </div>
 </div>',
-                    'thumbnail' => 'files/shares/us-left-too-quickly-says-afghanistan-bank-governor.jpg',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/us-left-too-quickly-says-afghanistan-bank-governor.jpg',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:42:35',
-                ),
-                7 =>
-                array(
-                    'id' => 8,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 1,
-                    'title' => 'Trendy shoffices and pizza ovens raised lockdown fire risks',
-                    'slug' => 'trendy-shoffices-and-pizza-ovens-raised-lockdown-fire-risks',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<div data-component="text-block">
+                    'published_at'  => '2021-08-18 10:42:35',
+                ],
+                7 => [
+                    'id'               => 8,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 1,
+                    'title'            => 'Trendy shoffices and pizza ovens raised lockdown fire risks',
+                    'slug'             => 'trendy-shoffices-and-pizza-ovens-raised-lockdown-fire-risks',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<div data-component="text-block">
 <div>
 <p>Trendy neighbours may have bought fire pits and pizza ovens during lockdown, or worked from home in a shoffice - but the risk of an expensive blaze grew.</p>
 </div>
@@ -1094,23 +1087,22 @@ class BadasoPostsTableSeeder extends Seeder
 </div>
 </div>
 </div>',
-                    'thumbnail' => 'files/shares/trendy-shoffices-and-pizza-ovens-raised-lockdown-fire-risks.jpg',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/trendy-shoffices-and-pizza-ovens-raised-lockdown-fire-risks.jpg',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:44:24',
-                ),
-                8 =>
-                array(
-                    'id' => 9,
-                    'user_id' => $user->id,
-                    'parent_id' => NULL,
-                    'category_id' => 3,
-                    'title' => 'Tesla Autopilot: US opens official investigation into self-driving tech',
-                    'slug' => 'tesla-autopilot-us-opens-official-investigation-into-self-driving-tech',
-                    'meta_title' => NULL,
-                    'meta_description' => NULL,
-                    'summary' => NULL,
-                    'content' => '<div data-component="text-block">
+                    'published_at'  => '2021-08-18 10:44:24',
+                ],
+                8 => [
+                    'id'               => 9,
+                    'user_id'          => $user->id,
+                    'parent_id'        => null,
+                    'category_id'      => 3,
+                    'title'            => 'Tesla Autopilot: US opens official investigation into self-driving tech',
+                    'slug'             => 'tesla-autopilot-us-opens-official-investigation-into-self-driving-tech',
+                    'meta_title'       => null,
+                    'meta_description' => null,
+                    'summary'          => null,
+                    'content'          => '<div data-component="text-block">
 <div>
 <p>The US federal agency in charge of road safety is opening an official investigation into Tesla\'s "self-driving" Autopilot system.</p>
 </div>
@@ -1231,12 +1223,12 @@ class BadasoPostsTableSeeder extends Seeder
 <p>Tesla disbanded its public relations team in October 2020 and cannot be reached for comment.</p>
 </div>
 </div>',
-                    'thumbnail' => 'files/shares/tesla-autopilot-us-opens-official-investigation-into-self-driving-tech.jpg',
-                    'published' => 1,
+                    'thumbnail'     => 'files/shares/tesla-autopilot-us-opens-official-investigation-into-self-driving-tech.jpg',
+                    'published'     => 1,
                     'comment_count' => 0,
-                    'published_at' => '2021-08-18 10:45:17',
-                ),
-            ));
+                    'published_at'  => '2021-08-18 10:45:17',
+                ],
+            ]);
 
             foreach ($posts as $key => $post) {
                 Post::create($post);
@@ -1246,7 +1238,7 @@ class BadasoPostsTableSeeder extends Seeder
         } catch (Exception $e) {
             DB::rollBack();
 
-            throw new Exception('Exception occur ' . $e);
+            throw new Exception('Exception occur '.$e);
         }
     }
 }

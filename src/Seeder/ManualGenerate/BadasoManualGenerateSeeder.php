@@ -14,22 +14,10 @@ class BadasoManualGenerateSeeder extends Seeder
 {
     use Seedable;
 
-    protected $seedersPath = 'database/seeds/Badaso/ManualGenerate/';
+    protected $seedersPath = 'database/seeds/Badaso/PostyTheme/ManualGenerate/';
 
     public function run()
     {
-        $this->call(RacksTableSeeder::class);
-        $this->call(BooksTableSeeder::class);
-        $this->call(MembersTableSeeder::class);
-        $this->call(BorrowingTableSeeder::class);
-        $this->call(ReturnTableSeeder::class);
-
-        PostTag::whereNotNull('id')->delete();
-        Post::whereNotNull('id')->delete();
-        Comment::whereNotNull('id')->delete();
-        Tag::whereNotNull('id')->delete();
-        Category::whereNotNull('id')->delete();
-
         $this->seed(BadasoCategoriesTableSeeder::class);
         $this->seed(BadasoTagsTableSeeder::class);
         $this->seed(BadasoPostsTableSeeder::class);

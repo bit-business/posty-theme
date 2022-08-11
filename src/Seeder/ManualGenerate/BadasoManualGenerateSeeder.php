@@ -3,11 +3,6 @@
 namespace Database\Seeders\Badaso\PostyTheme\ManualGenerate;
 
 use Illuminate\Database\Seeder;
-use Uasoft\Badaso\Module\Post\Models\Category;
-use Uasoft\Badaso\Module\Post\Models\Comment;
-use Uasoft\Badaso\Module\Post\Models\Post;
-use Uasoft\Badaso\Module\Post\Models\PostTag;
-use Uasoft\Badaso\Module\Post\Models\Tag;
 use Uasoft\Badaso\Traits\Seedable;
 
 class BadasoManualGenerateSeeder extends Seeder

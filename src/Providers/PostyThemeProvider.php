@@ -31,7 +31,8 @@ class PostyThemeProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../Seeder'                        => database_path('seeders/Badaso/PostyTheme'),
             __DIR__.'/../Config/badaso-posty-theme.php' => config_path('badaso-posty-theme.php'),
-            __DIR__.'/../Images/'                       => storage_path('app/public/photos/shares'),
+            __DIR__.'/../Images/content'                => storage_path('app/public/files/shares'),
+            __DIR__.'/../Images/demo'                   => storage_path('app/public/files/shares'),
             __DIR__.'/../resources/customization/'      => resource_path('js/badaso/theme/posty-theme/'),
         ], 'BadasoPostyTheme');
 

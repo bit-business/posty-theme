@@ -50,8 +50,13 @@
             ]
         }
     },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
+    },
     "require-dev": {
         "phpstan/phpstan": "^1.4",
-        "orchestra/testbench": "*"
+        "orchestra/testbench": "^7.6"
     }
 }

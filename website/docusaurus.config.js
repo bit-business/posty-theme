@@ -6,15 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Badaso Posty Theme Documentation",
-  tagline: "Official free theme for badaso post module",
-  url: "https://badaso-posty.uatech.co.id",
+  title: "Skijasi Posty Theme Documentation",
+  tagline: "Official free theme for skijasi post module",
+  url: "https://skijasi-posty.nadzorservera.co.id",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "uasoft-indonesia", // Usually your GitHub org/user name.
-  projectName: "badaso-posty-theme", // Usually your repo name.
+  organizationName: "nadzorservera-indonesia", // Usually your GitHub org/user name.
+  projectName: "skijasi-posty-theme", // Usually your repo name.
   trailingSlash: false,
 
   i18n: {
@@ -30,14 +30,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/uasoft-indonesia/badaso-posty-theme/edit/main/website/",
+          editUrl: "https://github.com/nadzorservera-indonesia/skijasi-posty-theme/edit/main/website/",
           routeBasePath: "/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/uasoft-indonesia/badaso-posty-theme/edit/main/website/blog",
+            "https://github.com/nadzorservera-indonesia/skijasi-posty-theme/edit/main/website/blog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -50,10 +50,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Badaso Posty Theme",
+        title: "Skijasi Posty Theme",
         logo: {
-          alt: "Badaso Posty Theme Logo",
-          src: "img/badaso-module-logo.png",
+          alt: "Skijasi Posty Theme Logo",
+          src: "img/skijasi-module-logo.png",
         },
         items: [
           // {
@@ -69,7 +69,7 @@ const config = {
           },
 
           {
-            href: "https://github.com/uasoft-indonesia/badaso-posty-theme",
+            href: "https://github.com/nadzorservera-indonesia/skijasi-posty-theme",
             label: "GitHub",
             position: "right",
           },
@@ -96,11 +96,11 @@ const config = {
             items: [
               {
                 label: "Facebook",
-                href: "https://www.facebook.com/groups/badaso",
+                href: "https://www.facebook.com/groups/skijasi",
               },
               {
                 label: "Telegram",
-                href: "https://t.me/badaso_developers",
+                href: "https://t.me/skijasi_developers",
               },
             ],
           },
@@ -109,12 +109,12 @@ const config = {
             items: [
               {
                 label: "Donation",
-                to: "https://opencollective.com/badaso",
+                to: "https://opencollective.com/skijasi",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} UASOFT. All right reserved`,
+        copyright: `Copyright © ${new Date().getFullYear()} NADZORSERVERA. All right reserved`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -1,14 +1,14 @@
 parameters:
     ignoreErrors:
     - '#Static method Inertia\\[a-zA-Z0-9-()\_]+::[a-zA-Z0-9-()\_]+ invoked with 3 parameters, 1-2 required+.#'
-    - '#Call to an undefined static method Uasoft\\Badaso\\Models\\[a-zA-Z0-9-()\_]+::[a-zA-Z0-9-()\_]+.#'
-    - '#Call to an undefined static method Uasoft\\Badaso\\Module\\Content\\Models\\Content::[a-zA-Z0-9-()\_]+.#'
-    - '#Call to an undefined static method Uasoft\\Badaso\\Module\\Post\\Models\\Category::[a-zA-Z0-9-()\_]+.#'
-    - '#Call to an undefined static method Uasoft\\Badaso\\Module\\Post\\Models\\Post::[a-zA-Z0-9-()\_]+.#'
-    - '#Call to an undefined static method Uasoft\\Badaso\\Module\\Post\\Models\\Tag::[a-zA-Z0-9-()\_]+.#'
-    - '#Caught class Database\\Seeders\\Badaso\\PostyTheme\\ManualGenerate\\Exception not found.#'
-    - '#Instantiated class Database\\Seeders\\Badaso\\PostyTheme\\ManualGenerate\\Exception not found.#'
-    - '#Call to an undefined static method Uasoft\\Badaso\\Module\\Post\\Models\\PostTag::[a-zA-Z0-9-()\_]+.#'
+    - '#Call to an undefined static method Nadzorservera\\Skijasi\\Models\\[a-zA-Z0-9-()\_]+::[a-zA-Z0-9-()\_]+.#'
+    - '#Call to an undefined static method Nadzorservera\\Skijasi\\Module\\Content\\Models\\Content::[a-zA-Z0-9-()\_]+.#'
+    - '#Call to an undefined static method Nadzorservera\\Skijasi\\Module\\Post\\Models\\Category::[a-zA-Z0-9-()\_]+.#'
+    - '#Call to an undefined static method Nadzorservera\\Skijasi\\Module\\Post\\Models\\Post::[a-zA-Z0-9-()\_]+.#'
+    - '#Call to an undefined static method Nadzorservera\\Skijasi\\Module\\Post\\Models\\Tag::[a-zA-Z0-9-()\_]+.#'
+    - '#Caught class Database\\Seeders\\Skijasi\\PostyTheme\\ManualGenerate\\Exception not found.#'
+    - '#Instantiated class Database\\Seeders\\Skijasi\\PostyTheme\\ManualGenerate\\Exception not found.#'
+    - '#Call to an undefined static method Nadzorservera\\Skijasi\\Module\\Post\\Models\\PostTag::[a-zA-Z0-9-()\_]+.#'
     - '#Call to static method [a-zA-Z0-9-()\_]+ on an unknown class DB.#'
 
 

@@ -3,7 +3,7 @@ import _ from "lodash";
 let exported = {};
 let languages = [];
 
-// DYNAMIC IMPORT BADASO LANG
+// DYNAMIC IMPORT SKIJASI LANG
 try {
   const modules = require.context("./modules", false, /\.js$/); //
   modules.keys().forEach((fileName) => {
@@ -31,7 +31,7 @@ try {
     exported[property] = modules(fileName).default;
   });
 } catch (error) {
-  console.info("Failed to load badaso languages", error);
+  console.info("Failed to load skijasi languages", error);
 }
 
 export default {

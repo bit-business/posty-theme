@@ -58,7 +58,7 @@ createInertiaApp({
   resolve: (name) => {
     const isExists = require
       .context(
-        "./../../../../../../resources/js/badaso/theme/posty-theme/pages",
+        "./../../../../../../resources/js/skijasi/theme/posty-theme/pages",
         false,
         /\.vue$/
       )
@@ -66,7 +66,7 @@ createInertiaApp({
       .some((key) => key.includes(name));
 
     if (isExists) {
-      return require(`./../../../../../../resources/js/badaso/theme/posty-theme/pages/${name}.vue`);
+      return require(`./../../../../../../resources/js/skijasi/theme/posty-theme/pages/${name}.vue`);
     } else {
       return require(`./pages/${name}.vue`);
     }

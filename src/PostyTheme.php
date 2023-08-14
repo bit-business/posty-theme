@@ -1,6 +1,6 @@
 <?php
 
-namespace Uasoft\Badaso\Theme\PostyTheme;
+namespace Nadzorservera\Skijasi\Theme\PostyTheme;
 
 class PostyTheme
 {

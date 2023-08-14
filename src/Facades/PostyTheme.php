@@ -1,6 +1,6 @@
 <?php
 
-namespace Uasoft\Badaso\Theme\PostyTheme\Facades;
+namespace Nadzorservera\Skijasi\Theme\PostyTheme\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,6 +13,6 @@ class PostyTheme extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'badaso-posty-theme';
+        return 'skijasi-posty-theme';
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Uasoft\Badaso\Theme\PostyTheme\Commands;
+namespace Nadzorservera\Skijasi\Theme\PostyTheme\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
@@ -14,14 +14,14 @@ class PostyThemeSetup extends Command
      *
      * @var string
      */
-    protected $name = 'badaso-posty-theme:setup';
+    protected $name = 'skijasi-posty-theme:setup';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Setup Badaso Posty Theme';
+    protected $description = 'Setup Skijasi Posty Theme';
 
     /**
      * Create a new command instance.
@@ -44,14 +44,14 @@ class PostyThemeSetup extends Command
         $this->updateWebpackMix();
         $this->updatePackageJson();
         $this->publishConfig();
-        $this->addingBadasoEnv();
+        $this->addingSkijasiEnv();
     }
 
     protected function publishConfig()
     {
-        Artisan::call('vendor:publish', ['--tag' => 'BadasoPostyTheme']);
+        Artisan::call('vendor:publish', ['--tag' => 'SkijasiPostyTheme']);
 
-        $this->info('Badaso posty theme provider published');
+        $this->info('Skijasi posty theme provider published');
     }
 
     protected function checkExist($file, $search)
@@ -70,8 +70,8 @@ class PostyThemeSetup extends Command
                 <<<'EOT'
 
         // Posty Theme
-        mix.js("vendor/badaso/posty-theme/src/resources/app/app.js", "public/js/posty-theme.js")
-            .sass("vendor/badaso/posty-theme/src/resources/app/assets/scss/style.scss", "public/css/posty-theme.css")
+        mix.js("vendor/skijasi/posty-theme/src/resources/app/app.js", "public/js/posty-theme.js")
+            .sass("vendor/skijasi/posty-theme/src/resources/app/assets/scss/style.scss", "public/css/posty-theme.css")
             .vue();
         EOT;
 
@@ -88,7 +88,7 @@ class PostyThemeSetup extends Command
         ];
     }
 
-    protected function addingBadasoEnv()
+    protected function addingSkijasiEnv()
     {
         try {
             $env_path = base_path('.env');
@@ -120,9 +120,9 @@ class PostyThemeSetup extends Command
             $env_file = join("\n", $arr_env_file);
             file_put_contents($env_path, $env_file);
 
-            $this->info('Adding badaso env');
+            $this->info('Adding skijasi env');
         } catch (\Exception $e) {
-            $this->error('Failed adding badaso env '.$e->getMessage());
+            $this->error('Failed adding skijasi env '.$e->getMessage());
         }
     }
 

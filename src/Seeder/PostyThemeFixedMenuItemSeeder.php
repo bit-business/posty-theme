@@ -1,12 +1,12 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme;
+namespace Database\Seeders\Skijasi\PostyTheme;
 
 use Exception;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Uasoft\Badaso\Models\Menu;
-use Uasoft\Badaso\Models\MenuItem;
+use Nadzorservera\Skijasi\Models\Menu;
+use Nadzorservera\Skijasi\Models\MenuItem;
 
 class PostyThemeFixedMenuItemSeeder extends Seeder
 {

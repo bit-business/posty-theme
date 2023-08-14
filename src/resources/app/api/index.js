@@ -1,6 +1,6 @@
 let exported = {};
 
-// DYNAMIC IMPORT BADASO API HELPER
+// DYNAMIC IMPORT SKIJASI API HELPER
 try {
   const modules = require.context("./modules", false, /\.js$/); //
   modules.keys().forEach((fileName) => {
@@ -23,7 +23,7 @@ try {
     exported[property] = modules(fileName).default;
   });
 } catch (error) {
-  console.info("There is no badaso api helper", error);
+  console.info("There is no skijasi api helper", error);
 }
 
 export default exported;

@@ -6,21 +6,21 @@
     <vs-row vs-justify="center" vs-align="flex-end" vs-type="flex" v-if="posts && posts.length > 0">
       <vs-col>
         <vs-card class="posty-theme__popular--card mb-0">
-          <Link slot="header" :href="route('badaso.posty-theme.popular')" class="posty-theme__popular--title">
+          <Link slot="header" :href="route('skijasi.posty-theme.popular')" class="posty-theme__popular--title">
             <vs-icon icon="thumb_up_alt" color="white"></vs-icon>
             Berita Terpopuler
           </Link>
           <div class="posty-theme__popular--card-content-container" v-for="(post, index) in posts" :key="index">
             <vs-row vs-justify="center" vs-align="center">
               <vs-col vs-w="10">
-                <Link class="pointer" :href="route('badaso.posty-theme.post', post.slug)">
+                <Link class="pointer" :href="route('skijasi.posty-theme.post', post.slug)">
                   <vue-clamp :max-lines="3" class="posty-theme__popular--content-title">
                     {{ post.title }}
                   </vue-clamp>
                 </Link>
               </vs-col>
               <vs-col vs-w="2">
-                <Link :href="route('badaso.posty-theme.post', post.slug)">
+                <Link :href="route('skijasi.posty-theme.post', post.slug)">
                   <vs-icon icon="chevron_right" class="pointer" color="#4F4F4F" size="36px" style="float: right;"></vs-icon>
                 </Link>
               </vs-col>
@@ -53,7 +53,7 @@ export default {
   methods: {
     fetchPosts() {
       this.loading = true
-      this.$api.badasoPostPublic
+      this.$api.skijasiPostPublic
         .fetchPopularPosts({
           page: 1,
           limit: 4

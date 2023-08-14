@@ -1,13 +1,13 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme\ManualGenerate;
+namespace Database\Seeders\Skijasi\PostyTheme\ManualGenerate;
 
 use Exception;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Uasoft\Badaso\Module\Post\Models\PostTag;
+use Nadzorservera\Skijasi\Module\Post\Models\PostTag;
 
-class BadasoPostTagTableSeeder extends Seeder
+class SkijasiPostTagTableSeeder extends Seeder
 {
     /**
      * Auto generated seed file.

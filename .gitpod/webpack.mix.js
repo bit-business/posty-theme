@@ -17,23 +17,23 @@ mix
     //
   ]);
 
-// Badaso
+// Skijasi
 mix
-  .js("packages/badaso/core/src/resources/js/app.js", "public/js/badaso.js")
+  .js("packages/skijasi/core/src/resources/js/app.js", "public/js/skijasi.js")
   .sass(
-    "packages/badaso/core/src/resources/js/assets/scss/style.scss",
-    "public/css/badaso.css"
+    "packages/skijasi/core/src/resources/js/assets/scss/style.scss",
+    "public/css/skijasi.css"
   )
   .vue();
 
 // Posty Theme
 mix
   .js(
-    "packages/badaso/posty-theme/src/resources/app/app.js",
+    "packages/skijasi/posty-theme/src/resources/app/app.js",
     "public/js/posty-theme.js"
   )
   .sass(
-    "packages/badaso/posty-theme/src/resources/app/assets/scss/style.scss",
+    "packages/skijasi/posty-theme/src/resources/app/assets/scss/style.scss",
     "public/css/posty-theme.css"
   )
   .vue();

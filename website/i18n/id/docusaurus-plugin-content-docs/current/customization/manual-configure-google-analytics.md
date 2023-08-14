@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Google Analytics Configuration Alternative
 
-Alternatif konfigurasi ini digunakan ketika hit google analytics tidak berjalan pada badaso post theme 
+Alternatif konfigurasi ini digunakan ketika hit google analytics tidak berjalan pada skijasi post theme 
 
 1. Pada `.env` tambahkan konfigurasi baru pada kunci `MIX_ANALYTICS_TRACKING_ID`
 2. Pada `resources/views` buat folder dengan nama `partials`
@@ -53,7 +53,7 @@ $measurement_id = env('MIX_ANALYTICS_TRACKING_ID', null);
 
 ```
 4. Pada `resources/views` buat folder dengan nama `vendor/post-theme`
-5. Salin file `vendor/badaso/post-theme/src/resources/views/app.blade.php` ke folder `resources/views/vendor/post-theme`
+5. Salin file `vendor/skijasi/post-theme/src/resources/views/app.blade.php` ke folder `resources/views/vendor/post-theme`
 6. Memanggil `resources/views/partials/google-analytics.blade.php` pada `resources/views/vendor/post-theme/app.blade.php`
 ```
 <!DOCTYPE html>

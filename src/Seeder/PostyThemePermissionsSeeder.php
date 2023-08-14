@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme;
+namespace Database\Seeders\Skijasi\PostyTheme;
 
 use Illuminate\Database\Seeder;
-use Uasoft\Badaso\Models\Permission;
-use Uasoft\Badaso\Models\Role;
+use Nadzorservera\Skijasi\Models\Permission;
+use Nadzorservera\Skijasi\Models\Role;
 
 class PostyThemePermissionsSeeder extends Seeder
 {

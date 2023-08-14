@@ -10,7 +10,7 @@ Untuk mengganti controller, Anda dapat mengikuti langkah-langkah berikut:
 
 `php artisan make:controller ExampleController`
 
-- Setelah pengontrol baru dibuat, Anda dapat mengganti pengontrol dengan mendaftarkan pengontrol di file `config/badaso-post-theme.php` di bagian `controllers`. Sebagai contoh:
+- Setelah pengontrol baru dibuat, Anda dapat mengganti pengontrol dengan mendaftarkan pengontrol di file `config/skijasi-post-theme.php` di bagian `controllers`. Sebagai contoh:
 
 ```php
 kembali [
@@ -22,6 +22,6 @@ kembali [
 ];
 ```
 
-- Anda dapat melihat kunci penggantian yang tersedia di file `vendor/badaso/post-theme/src/Routes/api.php`.
+- Anda dapat melihat kunci penggantian yang tersedia di file `vendor/skijasi/post-theme/src/Routes/api.php`.
 
 Catatan: Semua pengontrol di Tema Postingan adalah pengontrol yang dipanggil.

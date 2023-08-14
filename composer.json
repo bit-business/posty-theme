@@ -1,7 +1,7 @@
 {
     "version": "2.1.5",
-    "name": "badaso/posty-theme",
-    "description": "Official free theme for post module on badaso",
+    "name": "skijasi/posty-theme",
+    "description": " post module on skijasi",
     "keywords": [
         "laravel",
         "admin",
@@ -11,42 +11,42 @@
         "vue",
         "generator",
         "blog",
-        "badaso",
+        "skijasi",
         "blog",
         "news"
     ],
     "license": "proprietary",
-    "homepage": "https://badaso-posty.uatech.co.id/",
+    "homepage": "https://skijasi-posty.nadzorservera.co.id/",
     "support": {
-        "issues": "https://github.com/uasoft-indonesia/badaso-posty-theme/issues",
-        "discussion": "https://github.com/uasoft-indonesia/badaso-posty-theme/discussions",
-        "source": "https://github.com/uasoft-indonesia/badaso-posty-theme"
+        "issues": "https://github.com/nadzorservera-indonesia/skijasi-posty-theme/issues",
+        "discussion": "https://github.com/nadzorservera-indonesia/skijasi-posty-theme/discussions",
+        "source": "https://github.com/nadzorservera-indonesia/skijasi-posty-theme"
     },
     "type": "library",
     "require": {
         "symfony/var-exporter": "*",
-        "badaso/core": "^2.0",
-        "badaso/post-module": "^2.0",
-        "badaso/content-module": "*",
+        "skijasi/core": "^2.0",
+        "skijasi/post-module": "^2.0",
+        "skijasi/content-module": "*",
         "inertiajs/inertia-laravel": "^0.6.3",
         "tightenco/ziggy": "^1.4"
     },
     "authors": [
         {
-            "name": "UASOFT",
-            "email": "hello@uatech.co.id"
+            "name": "NADZORSERVERA",
+            "email": "hello@nadzorservera.co.id"
         }
     ],
     "minimum-stability": "alpha",
     "autoload": {
         "psr-4": {
-            "Uasoft\\Badaso\\Theme\\PostyTheme\\": "src/"
+            "Nadzorservera\\Skijasi\\Theme\\PostyTheme\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Uasoft\\Badaso\\Theme\\PostyTheme\\Providers\\PostyThemeProvider"
+                "Nadzorservera\\Skijasi\\Theme\\PostyTheme\\Providers\\PostyThemeProvider"
             ]
         }
     },

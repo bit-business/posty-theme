@@ -21,18 +21,18 @@
   },
   "link.item.label.Facebook": {
     "message": "Facebook",
-    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/groups/badaso"
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/groups/skijasi"
   },
   "link.item.label.Telegram": {
     "message": "Telegram",
-    "description": "The label of footer link with label=Telegram linking to https://t.me/badaso_developers"
+    "description": "The label of footer link with label=Telegram linking to https://t.me/skijasi_developers"
   },
   "link.item.label.Donation": {
     "message": "Donation",
-    "description": "The label of footer link with label=Donation linking to https://opencollective.com/badaso"
+    "description": "The label of footer link with label=Donation linking to https://opencollective.com/skijasi"
   },
   "copyright": {
-    "message": "Copyright © 2021 UASOFT. All right reserved",
+    "message": "Copyright © 2021 NADZORSERVERA. All right reserved",
     "description": "The footer copyright"
   }
 }

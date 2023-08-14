@@ -5,7 +5,7 @@
         <vs-icon icon="menu" size="24px" @click="() => open = !open"></vs-icon>
       </vs-col>
       <vs-col vs-xs="8" vs-sm="8" vs-lg="7" class="posty-theme__navbar--title" vs-justify="start" vs-align="center" vs-type="flex">
-        <Link :href="route('badaso.posty-theme.home')" :class="{ 'ml-16': $isMobile(), 'ml-32': !$isMobile() }">{{ getTitle }}</Link>
+        <Link :href="route('skijasi.posty-theme.home')" :class="{ 'ml-16': $isMobile(), 'ml-32': !$isMobile() }">{{ getTitle }}</Link>
       </vs-col>
       <vs-col vs-xs="2" vs-sm="2" vs-lg="4" class="posty-theme__navbar--search" vs-justify="center" vs-align="center" vs-type="flex">
         <template v-if="$isMobile()">
@@ -25,8 +25,8 @@
       </vs-col>
     </vs-row>
     <vs-row class="mb-30 posty-theme__menu" vs-justify="start" vs-align="center" vs-type="flex" :class="{ open: open }">
-      <vs-col vs-xs="4" vs-sm="4" vs-lg="2" class="posty-theme__menu--item"><Link :href="route('badaso.posty-theme.home')">HOME</Link></vs-col>
-      <vs-col vs-xs="4" vs-sm="4" vs-lg="2" class="posty-theme__menu--item" v-for="(category, index) in getCategories" :key="index"><Link :href="route('badaso.posty-theme.category', category.slug)">{{ category.title }}</Link></vs-col>
+      <vs-col vs-xs="4" vs-sm="4" vs-lg="2" class="posty-theme__menu--item"><Link :href="route('skijasi.posty-theme.home')">HOME</Link></vs-col>
+      <vs-col vs-xs="4" vs-sm="4" vs-lg="2" class="posty-theme__menu--item" v-for="(category, index) in getCategories" :key="index"><Link :href="route('skijasi.posty-theme.category', category.slug)">{{ category.title }}</Link></vs-col>
     </vs-row>
 
     <div class="posty-theme__search--overlay" v-if="overlay">
@@ -88,7 +88,7 @@ export default {
       this.overlay = false;
       
       if (this.search !== null || this.search !== "") {
-        this.$inertia.visit(this.route('badaso.posty-theme.search', this.search))
+        this.$inertia.visit(this.route('skijasi.posty-theme.search', this.search))
       }
 
       this.search = ""

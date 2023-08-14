@@ -19,16 +19,16 @@ jobs:
     strategy:
       fail-fast: false
 
-    name: "PHPStan Badaso Posty Theme"
+    name: "PHPStan Skijasi Posty Theme"
 
     steps:
       - uses: actions/checkout@master
 
-    # Run composer badaso commerce-theme
+    # Run composer skijasi commerce-theme
       - name: Composer update
         run: composer update --no-interaction
 
-    # Badaso PostyTheme Test PHPStan
-      - name: Badaso PostyTheme test PHPStan
+    # Skijasi PostyTheme Test PHPStan
+      - name: Skijasi PostyTheme test PHPStan
         run: ./vendor/bin/phpstan analyse -c phpstan.neon.dist
 

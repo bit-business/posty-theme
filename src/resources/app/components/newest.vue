@@ -6,22 +6,22 @@
     <vs-row vs-justify="center" vs-align="flex-end" vs-type="flex" v-if="posts && posts.length > 0">
       <vs-col>
         <vs-card class="posty-theme__newest--card mb-0">
-          <Link slot="header" :href="route('badaso.posty-theme.newest')" class="posty-theme__newest--title">
+          <Link slot="header" :href="route('skijasi.posty-theme.newest')" class="posty-theme__newest--title">
             <vs-icon icon="schedule" color="white"></vs-icon>
             Berita Terbaru
           </Link>
           <div class="posty-theme__newest--card-content-container" v-for="(post, index) in posts" :key="index">
             <vs-row vs-type="flex" :vs-justify="$isMobile() ? 'start' : 'center'" vs-align="center">
               <vs-col vs-xs="12" vs-sm="12" vs-lg="4">
-                <Link :href="route('badaso.posty-theme.post', post.slug)">
+                <Link :href="route('skijasi.posty-theme.post', post.slug)">
                   <img :src="post.thumbnail" :class="{pointer: true, 'mb-20': $isMobile()}">
                 </Link>
               </vs-col>
               <vs-col vs-xs="12" vs-sm="12" vs-lg="8">
-                <Link v-if="$isMobile()" :href="route('badaso.posty-theme.post', post.slug)" class="posty-theme__newest--content-title">
+                <Link v-if="$isMobile()" :href="route('skijasi.posty-theme.post', post.slug)" class="posty-theme__newest--content-title">
                   {{ post.title }}
                 </Link>
-                <Link v-else :href="route('badaso.posty-theme.post', post.slug)">
+                <Link v-else :href="route('skijasi.posty-theme.post', post.slug)">
                   <vue-clamp :max-lines="3" class="posty-theme__newest--content-title">
                     {{ post.title }}
                   </vue-clamp>
@@ -37,7 +37,7 @@
               </vs-row>
 
               <div v-if="$isMobile()" class="posty-theme__newest--card-description line-clamp-3" v-html="post.content"></div>
-              <Link v-if="$isMobile()" :href="route('badaso.posty-theme.post', post.slug)" class="posty-theme__newest--read-more">Baca Selengkapnya</Link>
+              <Link v-if="$isMobile()" :href="route('skijasi.posty-theme.post', post.slug)" class="posty-theme__newest--read-more">Baca Selengkapnya</Link>
               <vs-divider v-if="index !== posts.length - 1"/>
             </vs-row>
           </div>
@@ -67,7 +67,7 @@ export default {
   methods: {
     fetchPosts() {
       this.loading = true
-      this.$api.badasoPostPublic
+      this.$api.skijasiPostPublic
         .fetchPosts({
           page: 1,
           limit: 4,

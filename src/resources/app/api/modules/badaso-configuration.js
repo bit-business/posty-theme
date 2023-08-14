@@ -3,7 +3,7 @@ import QueryString from "../../../../../../core/src/resources/js/api/query-strin
 
 let apiPrefix = process.env.MIX_API_ROUTE_PREFIX
   ? "/" + process.env.MIX_API_ROUTE_PREFIX
-  : "/badaso-api";
+  : "/skijasi-api";
 
 export default {
   applyable(data = {}) {

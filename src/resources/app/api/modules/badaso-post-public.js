@@ -3,7 +3,7 @@ import QueryString from "../../../../../../core/src/resources/js/api/query-strin
 
 let apiPrefix = process.env.MIX_API_ROUTE_PREFIX
   ? "/" + process.env.MIX_API_ROUTE_PREFIX + "/module/post"
-  : "/badaso-api/module/post";
+  : "/skijasi-api/module/post";
 
 export default {
   fetchPosts(data = {}) {

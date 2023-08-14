@@ -1,6 +1,6 @@
 <?php
 
-namespace Uasoft\Badaso\Theme\PostyTheme\Controllers;
+namespace Nadzorservera\Skijasi\Theme\PostyTheme\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

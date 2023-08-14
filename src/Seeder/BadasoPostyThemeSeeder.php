@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme;
+namespace Database\Seeders\Skijasi\PostyTheme;
 
 use Illuminate\Database\Seeder;
 
-class BadasoPostyThemeSeeder extends Seeder
+class SkijasiPostyThemeSeeder extends Seeder
 {
     /**
      * Run the database seeds.

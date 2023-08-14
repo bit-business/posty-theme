@@ -1,13 +1,13 @@
 <?php
 
-namespace Uasoft\Badaso\Theme\PostyTheme\Middlewares;
+namespace Nadzorservera\Skijasi\Theme\PostyTheme\Middlewares;
 
 use Illuminate\Http\Request;
 use Inertia\Middleware;
-use Uasoft\Badaso\Helpers\ApiResponse;
-use Uasoft\Badaso\Helpers\Config;
-use Uasoft\Badaso\Module\Content\Models\Content;
-use Uasoft\Badaso\Module\Post\Models\Category;
+use Nadzorservera\Skijasi\Helpers\ApiResponse;
+use Nadzorservera\Skijasi\Helpers\Config;
+use Nadzorservera\Skijasi\Module\Content\Models\Content;
+use Nadzorservera\Skijasi\Module\Post\Models\Category;
 
 class HandleInertiaRequests extends Middleware
 {

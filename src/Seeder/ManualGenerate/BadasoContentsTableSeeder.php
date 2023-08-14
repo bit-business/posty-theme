@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme\ManualGenerate;
+namespace Database\Seeders\Skijasi\PostyTheme\ManualGenerate;
 
 use Illuminate\Database\Seeder;
 
-class BadasoContentsTableSeeder extends Seeder
+class SkijasiContentsTableSeeder extends Seeder
 {
     /**
      * Auto generated seed file.
@@ -18,9 +18,9 @@ class BadasoContentsTableSeeder extends Seeder
         \DB::beginTransaction();
 
         try {
-            \DB::table('badaso_contents')->delete();
+            \DB::table('skijasi_contents')->delete();
 
-            \DB::table('badaso_contents')->insert([
+            \DB::table('skijasi_contents')->insert([
                 0 => [
                     'id'         => 10,
                     'slug'       => 'posty-theme-social-media',

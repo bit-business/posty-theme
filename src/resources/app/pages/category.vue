@@ -15,17 +15,17 @@
               <div class="posty-theme__categories--card-content-container" v-for="(post, index) in posts.data" :key="index">
                 <vs-row vs-type="flex" vs-align="center" vs-justify="center">
                   <vs-col :class="{ 'mb-20': $isMobile(), 'pr-16': !$isMobile() }" vs-xs="12" vs-sm="12" vs-lg="5">
-                    <Link :href="route('badaso.posty-theme.post', post.slug)">
+                    <Link :href="route('skijasi.posty-theme.post', post.slug)">
                       <img :src="post.thumbnail">
                     </Link>
                   </vs-col>
                   <vs-col vs-xs="12" vs-sm="12" vs-lg="7">
-                    <Link :href="route('badaso.posty-theme.post', post.slug)">
+                    <Link :href="route('skijasi.posty-theme.post', post.slug)">
                       <h3 class="posty-theme__categories--content-title line-clamp-2">{{ post.title }}</h3>
                     </Link>
                     <info :post="post"></info>
                     <div class="posty-theme__categories--card-description line-clamp-3" v-html="post.content"></div>
-                    <Link :href="route('badaso.posty-theme.post', post.slug)" class="posty-theme__categories--read-more">Baca Selengkapnya</Link>
+                    <Link :href="route('skijasi.posty-theme.post', post.slug)" class="posty-theme__categories--read-more">Baca Selengkapnya</Link>
                   </vs-col>
                   <vs-col vs-w="12">
                     <vs-divider v-if="index !== posts.data.length - 1"/>
@@ -87,7 +87,7 @@ export default {
   methods: {
     fetchPosts() {
       this.loading = true
-      this.$api.badasoPostPublic
+      this.$api.skijasiPostPublic
         .fetchPosts({
           page: 1,
           limit: 10,
@@ -103,7 +103,7 @@ export default {
         });
     },
     next() {
-      this.$api.badasoPostPublic
+      this.$api.skijasiPostPublic
         .fetchPosts({
           page: this.page,
           limit: 10,

@@ -1,15 +1,15 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme\ManualGenerate;
+namespace Database\Seeders\Skijasi\PostyTheme\ManualGenerate;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Uasoft\Badaso\Models\User;
-use Uasoft\Badaso\Module\Post\Models\Post;
+use Nadzorservera\Skijasi\Models\User;
+use Nadzorservera\Skijasi\Module\Post\Models\Post;
 
-class BadasoPostsTableSeeder extends Seeder
+class SkijasiPostsTableSeeder extends Seeder
 {
     /**
      * Auto generated seed file.

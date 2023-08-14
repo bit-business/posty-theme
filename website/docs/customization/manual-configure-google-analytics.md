@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Google Analytics Configuration Alternative
 
-This configuration alternative is used when hit google analytics is not running on badaso post theme
+This configuration alternative is used when hit google analytics is not running on skijasi post theme
 
 1. In `.env` add new configuration on `MIX_ANALYTICS_TRACKING_ID` key
 2. In `resources/views` create a folder named `partials`
@@ -53,7 +53,7 @@ $measurement_id = env('MIX_ANALYTICS_TRACKING_ID', null);
 
 ```
 4. In `resources/views` create a folder named `vendor/post-theme`
-5. Copy the `vendor/badaso/post-theme/src/resources/views/app.blade.php` file to the `resources/views/vendor/post-theme` folder
+5. Copy the `vendor/skijasi/post-theme/src/resources/views/app.blade.php` file to the `resources/views/vendor/post-theme` folder
 6. Calling `resources/views/partials/google-analytics.blade.php` in `resources/views/vendor/post-theme/app.blade.php`
 ```
 <!DOCTYPE html>

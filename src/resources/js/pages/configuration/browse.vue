@@ -1,6 +1,6 @@
 <template>
   <div>
-    <badaso-breadcrumb-row />
+    <skijasi-breadcrumb-row />
     <vs-row
       v-if="$helper.isAllowed('browse_posty_theme_configuration') && groupList.length > 0"
     >
@@ -17,143 +17,143 @@
                 v-for="(config, index) in filterConfigurations('postyTheme')"
                 :key="index"
               >
-                <badaso-text
+                <skijasi-text
                   v-if="config.type === 'text'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-text>
-                <badaso-email
+                ></skijasi-text>
+                <skijasi-email
                   v-if="config.type === 'email'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-email>
-                <badaso-password
+                ></skijasi-email>
+                <skijasi-password
                   v-if="config.type === 'password'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-password>
-                <badaso-textarea
+                ></skijasi-password>
+                <skijasi-textarea
                   v-if="config.type === 'textarea'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-textarea>
-                <badaso-checkbox
+                ></skijasi-textarea>
+                <skijasi-checkbox
                   v-if="config.type === 'checkbox'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
                   :items="config.details.items"
-                ></badaso-checkbox>
-                <badaso-search
+                ></skijasi-checkbox>
+                <skijasi-search
                   v-if="config.type === 'search'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-search>
-                <badaso-number
+                ></skijasi-search>
+                <skijasi-number
                   v-if="config.type === 'number'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-number>
-                <badaso-url
+                ></skijasi-number>
+                <skijasi-url
                   v-if="config.type === 'url'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-url>
-                <badaso-time
+                ></skijasi-url>
+                <skijasi-time
                   v-if="config.type === 'time'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-time>
-                <badaso-date
+                ></skijasi-time>
+                <skijasi-date
                   v-if="config.type === 'date'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-date>
-                <badaso-datetime
+                ></skijasi-date>
+                <skijasi-datetime
                   v-if="config.type === 'datetime'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
-                ></badaso-datetime>
-                <badaso-select
+                ></skijasi-datetime>
+                <skijasi-select
                   v-if="config.type === 'select'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
                   :items="config.details.items"
-                ></badaso-select>
-                <badaso-radio
+                ></skijasi-select>
+                <skijasi-radio
                   v-if="config.type === 'radio'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
                   :items="config.details.items"
-                ></badaso-radio>
-                <badaso-switch
+                ></skijasi-radio>
+                <skijasi-switch
                   v-if="config.type === 'switch'"
                   :label="config.displayName"
                   size="10"
                   v-model="config.value"
-                ></badaso-switch>
-                <badaso-slider
+                ></skijasi-switch>
+                <skijasi-slider
                   v-if="config.type === 'slider'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   size="10"
                   v-model="config.value"
-                ></badaso-slider>
-                <badaso-editor
+                ></skijasi-slider>
+                <skijasi-editor
                   v-if="config.type === 'editor'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   size="10"
                   v-model="config.value"
-                ></badaso-editor>
-                <badaso-tags
+                ></skijasi-editor>
+                <skijasi-tags
                   v-if="config.type === 'tags'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   size="10"
                   v-model="config.value"
-                ></badaso-tags>
-                <badaso-hidden
+                ></skijasi-tags>
+                <skijasi-hidden
                   v-if="config.type === 'hidden'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
-                ></badaso-hidden>
+                ></skijasi-hidden>
 
-                <badaso-select-multiple
+                <skijasi-select-multiple
                   v-if="config.type === 'select_multiple'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   v-model="config.value"
                   size="10"
                   :items="config.details.items"
-                ></badaso-select-multiple>
-                <badaso-upload-image
+                ></skijasi-select-multiple>
+                <skijasi-upload-image
                   v-if="config.type === 'upload_image'"
                   :label="config.displayName"
                   :placeholder="config.value"
@@ -161,8 +161,8 @@
                   :private-only="config.details !== null && config.details.type === 'private-only'"
                   :shares-only="config.details !== null && config.details.type === 'shares-only'"
                   v-model="config.value"
-                ></badaso-upload-image>
-                <badaso-upload-file
+                ></skijasi-upload-image>
+                <skijasi-upload-file
                   v-if="config.type === 'upload_file'"
                   :label="config.displayName"
                   :placeholder="config.value"
@@ -170,16 +170,16 @@
                   :private-only="config.details !== null && config.details.type === 'private-only'"
                   :shares-only="config.details !== null && config.details.type === 'shares-only'"
                   v-model="config.value"
-                ></badaso-upload-file>
-                <badaso-color-picker
+                ></skijasi-upload-file>
+                <skijasi-color-picker
                   v-if="config.type === 'color_picker'"
                   :label="config.displayName"
                   :placeholder="config.value"
                   size="10"
                   v-model="config.value"
-                ></badaso-color-picker>
+                ></skijasi-color-picker>
 
-                <badaso-upload-image-multiple
+                <skijasi-upload-image-multiple
                   v-if="config.type === 'upload_image_multiple'"
                   :label="config.displayName"
                   :placeholder="config.value"
@@ -187,8 +187,8 @@
                   :private-only="config.details !== null && config.details.type === 'private-only'"
                   :shares-only="config.details !== null && config.details.type === 'shares-only'"
                   v-model="config.value"
-                ></badaso-upload-image-multiple>
-                <badaso-upload-file-multiple
+                ></skijasi-upload-image-multiple>
+                <skijasi-upload-file-multiple
                   v-if="config.type === 'upload_file_multiple'"
                   :label="config.displayName"
                   :placeholder="config.value"
@@ -196,7 +196,7 @@
                   :shares-only="config.details !== null && config.details.type === 'shares-only'"
                   size="10"
                   v-model="config.value"
-                ></badaso-upload-file-multiple>
+                ></skijasi-upload-file-multiple>
 
                 <vs-col vs-lg="2">
                   <br />
@@ -290,7 +290,7 @@ export default {
     },
     getConfigurationList() {
       this.$openLoader();
-      this.$api.badasoConfiguration
+      this.$api.skijasiConfiguration
         .browse()
         .then((response) => {
           this.$closeLoader();
@@ -340,14 +340,14 @@ export default {
     },
     deleteConfiguration() {
       this.$openLoader();
-      this.$api.badasoConfiguration
+      this.$api.skijasiConfiguration
         .delete({
           id: this.willDeleteConfigurationId,
         })
         .then((response) => {
           this.$closeLoader();
           this.getConfigurationList();
-          this.$store.commit("badaso/FETCH_MENU");
+          this.$store.commit("skijasi/FETCH_MENU");
         })
         .catch((error) => {
           this.$closeLoader();
@@ -360,12 +360,12 @@ export default {
     },
     submitForm(config) {
       this.$openLoader();
-      this.$api.badasoConfiguration
+      this.$api.skijasiConfiguration
         .edit(this.$caseConvert.snake(config))
         .then((response) => {
           this.$closeLoader();
           this.getConfigurationList();
-          this.$store.commit("badaso/FETCH_CONFIGURATION");
+          this.$store.commit("skijasi/FETCH_CONFIGURATION");
           this.$vs.notify({
             title: this.$t("alert.success"),
             text: this.$t("site.configUpdated"),
@@ -383,12 +383,12 @@ export default {
     },
     submitMultipleEdit() {
       this.$openLoader();
-      this.$api.badasoConfiguration
+      this.$api.skijasiConfiguration
         .editMultiple({ configurations: this.configurations })
         .then((response) => {
           this.$closeLoader();
           this.getConfigurationList();
-          this.$store.commit("badaso/FETCH_CONFIGURATION");
+          this.$store.commit("skijasi/FETCH_CONFIGURATION");
           this.$vs.notify({
             title: this.$t("alert.success"),
             text: this.$t("site.configUpdated"),

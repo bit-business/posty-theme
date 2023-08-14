@@ -6,26 +6,26 @@
     <template v-if="$isMobile()">
       <vs-row vs-justify="center" vs-align="flex-end" vs-type="flex" v-if="posts && posts.length > 0">
         <vs-col vs-w="6" vs-justify="flex-start" vs-align="center" vs-type="flex" class="mb-8">
-          <Link :href="route('badaso.posty-theme.category', posts[0].category.slug)" class="posty-theme__category-two--title">{{ posts[0].category.title }}</Link>
+          <Link :href="route('skijasi.posty-theme.category', posts[0].category.slug)" class="posty-theme__category-two--title">{{ posts[0].category.title }}</Link>
         </vs-col>
         <vs-col vs-w="6" vs-justify="flex-end" vs-align="center" vs-type="flex" class="mb-8">
-          <Link :href="route('badaso.posty-theme.category', posts[0].category.slug)" class="d-flex justify-content-center align-items-center text-black"><span class="posty-theme__category-two--see-all">LIHAT SEMUA</span> <vs-icon icon="chevron_right" size="12px"></vs-icon></Link>
+          <Link :href="route('skijasi.posty-theme.category', posts[0].category.slug)" class="d-flex justify-content-center align-items-center text-black"><span class="posty-theme__category-two--see-all">LIHAT SEMUA</span> <vs-icon icon="chevron_right" size="12px"></vs-icon></Link>
         </vs-col>
         <vs-col>
           <vs-card class="posty-theme__category-two--card mb-20">
             <div slot="media" class="posty-theme__category-two--card-header-container">
-              <Link :href="route('badaso.posty-theme.post', posts[0].slug)">
+              <Link :href="route('skijasi.posty-theme.post', posts[0].slug)">
                 <img :src="posts[0].thumbnail">
               </Link>
               <div class="posty-theme__category-two--card-header">
                 <vs-row>
                   <vs-col class="mb-8">
-                    <Link :href="route('badaso.posty-theme.category', posts[0].category.slug)">
+                    <Link :href="route('skijasi.posty-theme.category', posts[0].category.slug)">
                       <vs-chip color="#2E99A5" class="posty-theme__category-two--card-header-chip">{{ posts[0].category.title }}</vs-chip>
                     </Link>
                   </vs-col>
                   <vs-col>
-                    <Link :href="route('badaso.posty-theme.post', posts[0].slug)" class="posty-theme__category-two--card-header-title">
+                    <Link :href="route('skijasi.posty-theme.post', posts[0].slug)" class="posty-theme__category-two--card-header-title">
                       {{ posts[0].title }}
                     </Link>
                   </vs-col>
@@ -34,7 +34,7 @@
             </div>
             <div class="posty-theme__category-two--card-content-container">
               <div class="posty-theme__category-two--card-description line-clamp-3" v-html="posts[0].content"></div>
-              <Link :href="route('badaso.posty-theme.post', posts[0].slug)" class="posty-theme__category-two--read-more">Baca Selengkapnya</Link>
+              <Link :href="route('skijasi.posty-theme.post', posts[0].slug)" class="posty-theme__category-two--read-more">Baca Selengkapnya</Link>
               <vs-row vs-type="grid" class="h-100 place-content-start mt-16">
                 <vs-col vs-w="12" vs-type="grid" vs-justify="center" vs-align="center" class="grid-column mb-8">
                   <vs-icon icon="chat_bubble_outline" color="#4F4F4F" size="14px"></vs-icon> 
@@ -50,7 +50,7 @@
             <vs-card :class="{ 'posty-theme__category-two--card': true, 'mb-20': index !== secondaryPost.length - 1, 'mb-0': index === secondaryPost.length - 1}" v-for="(post, index) in secondaryPost" :key="index">
               <vs-row vs-justify="center" vs-align="center" class="h-100">
                 <vs-col>
-                  <Link :href="route('badaso.posty-theme.post', post.slug)">
+                  <Link :href="route('skijasi.posty-theme.post', post.slug)">
                     <vue-clamp class="posty-theme__category-two--card-header-text p-16" :max-lines="2">{{ post.title }}</vue-clamp>
                   </Link>
                 </vs-col>
@@ -64,12 +64,12 @@
     <template v-else>
       <vs-row vs-justify="center" vs-align="flex-end" vs-type="flex" v-if="posts && posts.length > 0">
         <vs-col vs-w="6" vs-justify="flex-start" vs-align="center" vs-type="flex" class="mb-8">
-          <Link :href="route('badaso.posty-theme.category', posts[0].category.slug)" class="posty-theme__category-two--title">
+          <Link :href="route('skijasi.posty-theme.category', posts[0].category.slug)" class="posty-theme__category-two--title">
             {{ posts[0].category.title }}
           </Link>
         </vs-col>
         <vs-col vs-w="6" vs-justify="flex-end" vs-align="center" vs-type="flex" class="mb-8">
-          <Link :href="route('badaso.posty-theme.category', posts[0].category.slug)" class="d-flex justify-content-center align-items-center text-black">
+          <Link :href="route('skijasi.posty-theme.category', posts[0].category.slug)" class="d-flex justify-content-center align-items-center text-black">
             <span class="posty-theme__category-two--see-all">LIHAT SEMUA</span>
             <vs-icon icon="chevron_right" size="24px"></vs-icon>
           </Link>
@@ -79,18 +79,18 @@
             <vs-col vs-w="6" class="pr-30">
               <vs-card class="posty-theme__category-two--card mb-0">
                 <div slot="media" class="posty-theme__category-two--card-header-container">
-                  <Link :href="route('badaso.posty-theme.post', posts[0].slug)">
+                  <Link :href="route('skijasi.posty-theme.post', posts[0].slug)">
                     <img-overlay :src="posts[0].thumbnail" class="pointer overlay__rounded" />
                   </Link>
                   <div class="posty-theme__category-two--card-header z-20">
                     <vs-row>
                       <vs-col class="mb-8">
-                        <Link :href="route('badaso.posty-theme.category', posts[0].category.slug)">
+                        <Link :href="route('skijasi.posty-theme.category', posts[0].category.slug)">
                           <vs-chip color="#2E99A5" class="posty-theme__category-two--card-header-chip">{{ posts[0].category.title }}</vs-chip>
                         </Link>
                       </vs-col>
                       <vs-col>
-                        <Link :href="route('badaso.posty-theme.post', posts[0].slug)">
+                        <Link :href="route('skijasi.posty-theme.post', posts[0].slug)">
                           <h3 class="posty-theme__category-two--card-header-title">
                             {{ posts[0].title }}
                           </h3>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="posty-theme__category-two--card-content-container">
                   <div class="posty-theme__category-two--card-description line-clamp-3 mb-4" v-html="posts[0].content"></div>
-                  <Link :href="route('badaso.posty-theme.post', posts[0].slug)" class="posty-theme__category-two--read-more">
+                  <Link :href="route('skijasi.posty-theme.post', posts[0].slug)" class="posty-theme__category-two--read-more">
                     Baca Selengkapnya
                   </Link>
                   <vs-row vs-type="grid" class="h-100 place-content-start mt-16">
@@ -120,11 +120,11 @@
                 <vs-row vs-type="flex" vs-justify="center" vs-align="center">
                   <vs-col v-for="(post, index) in secondaryPost" :key="index">
                     <vs-card :class="{ 'posty-theme__category-two--card': true, 'mb-20': index !== secondaryPost.length - 1, 'mb-0': index === secondaryPost.length - 1}">
-                      <Link slot="media" class="posty-theme__category-two--card-header-container-secondary p-16 pointer" :href="route('badaso.posty-theme.post', post.slug)">
+                      <Link slot="media" class="posty-theme__category-two--card-header-container-secondary p-16 pointer" :href="route('skijasi.posty-theme.post', post.slug)">
                         <div class="posty-theme__category-two--card-header-secondary">
                           <vs-row>
                             <vs-col>
-                              <Link :href="route('badaso.posty-theme.post', post.slug)">
+                              <Link :href="route('skijasi.posty-theme.post', post.slug)">
                                 <vue-clamp tag="h3" :max-lines="2" class="posty-theme__category-two--card-header-text">
                                   {{ post.title }}
                                 </vue-clamp>
@@ -177,7 +177,7 @@ export default {
       this.loading = true
       let category = this.$page.props.categories[1]
       if (category) {
-        this.$api.badasoPostPublic
+        this.$api.skijasiPostPublic
           .fetchPosts({
             page: 1,
             limit: 10,

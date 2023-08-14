@@ -1,22 +1,22 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme\ManualGenerate;
+namespace Database\Seeders\Skijasi\PostyTheme\ManualGenerate;
 
 use Illuminate\Database\Seeder;
-use Uasoft\Badaso\Traits\Seedable;
+use Nadzorservera\Skijasi\Traits\Seedable;
 
-class BadasoManualGenerateSeeder extends Seeder
+class SkijasiManualGenerateSeeder extends Seeder
 {
     use Seedable;
 
-    protected $seedersPath = 'database/seeds/Badaso/PostyTheme/ManualGenerate/';
+    protected $seedersPath = 'database/seeds/Skijasi/PostyTheme/ManualGenerate/';
 
     public function run()
     {
-        $this->seed(BadasoCategoriesTableSeeder::class);
-        $this->seed(BadasoTagsTableSeeder::class);
-        $this->seed(BadasoPostsTableSeeder::class);
-        $this->seed(BadasoPostTagTableSeeder::class);
-        $this->seed(BadasoContentsTableSeeder::class);
+        $this->seed(SkijasiCategoriesTableSeeder::class);
+        $this->seed(SkijasiTagsTableSeeder::class);
+        $this->seed(SkijasiPostsTableSeeder::class);
+        $this->seed(SkijasiPostTagTableSeeder::class);
+        $this->seed(SkijasiContentsTableSeeder::class);
     }
 }

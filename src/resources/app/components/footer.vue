@@ -4,7 +4,7 @@
       <vs-row vs-justify="space-around" vs-align="flex-start">
         <vs-col class="mb-24" vs-xs="12" vs-sm="12" vs-lg="4">
           <h3 class="posty-theme__footer--title mb-4">{{ getTitle }}</h3>
-          <span class="posty-theme__footer--copyright">© 2021 Post Theme - Badaso<br>All rights reserved.</span>
+          <span class="posty-theme__footer--copyright">© 2021 Post Theme - Skijasi<br>All rights reserved.</span>
         </vs-col>
         <vs-col class="mb-16" vs-xs="12" vs-sm="12" vs-lg="2">
           <h3 class="posty-theme__footer--links mb-8">Quick Links</h3>

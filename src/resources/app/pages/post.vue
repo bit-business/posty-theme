@@ -9,15 +9,15 @@
           <vs-col vs-w="12" vs-justify="flex-start" vs-align="center" vs-type="flex">
             <vs-breadcrumb separator="chevron_right" class="posty-theme__breadcrumb mb-8">
               <li>
-                <Link :href="route('badaso.posty-theme.home')" class="pointer">Home</Link>
+                <Link :href="route('skijasi.posty-theme.home')" class="pointer">Home</Link>
                 <vs-icon icon="chevron_right" class="vs-breadcrum--separator"></vs-icon>
               </li>
               <li v-if="post.category">
-                <Link :href="route('badaso.posty-theme.category', post.category.slug)" class="pointer">{{ post.category.title }}</Link>
+                <Link :href="route('skijasi.posty-theme.category', post.category.slug)" class="pointer">{{ post.category.title }}</Link>
                 <vs-icon icon="chevron_right" class="vs-breadcrum--separator"></vs-icon>
               </li>
               <li>
-                <Link :href="route('badaso.posty-theme.post', post.slug)" class="pointer">{{ post.title }}</Link>
+                <Link :href="route('skijasi.posty-theme.post', post.slug)" class="pointer">{{ post.title }}</Link>
               </li>
             </vs-breadcrumb>
           </vs-col>
@@ -55,7 +55,7 @@
           <vs-divider class="mb-16 mt-16" />
           <vs-col vs-w="12" vs-justify="flex-start" vs-align="center" vs-type="flex">
             <vs-icon icon="local_offer" size="18px" color="#4F4F4F"></vs-icon> <span class="ml-4 mr-16 posty-theme__post--tag">TAG: </span>
-            <Link v-for="(tag, index) in post.tags" :key="index" :href="route('badaso.posty-theme.tag', tag.slug)">
+            <Link v-for="(tag, index) in post.tags" :key="index" :href="route('skijasi.posty-theme.tag', tag.slug)">
               <vs-chip color="#2E99A5" class="posty-theme__post--tag-chip mr-8">{{ tag.title }}</vs-chip>
             </Link>
           </vs-col>
@@ -83,14 +83,14 @@
 
               <div class="flex gap-6">
                 <vs-card class="posty-theme__post--card-other w-50 shadow-none" v-if="next">
-                  <Link :href="route('badaso.posty-theme.post', next.slug)">
+                  <Link :href="route('skijasi.posty-theme.post', next.slug)">
                     <div class="posty-theme__post--card-other-content rounded line-clamp-3" :style="`background-image: url('${next.thumbnail}')`">
                       {{ next.title }}
                     </div>
                   </Link>
                 </vs-card>
                 <vs-card class="posty-theme__post--card-other w-50 shadow-none" v-if="previous">
-                  <Link :href="route('badaso.posty-theme.post', previous.slug)">
+                  <Link :href="route('skijasi.posty-theme.post', previous.slug)">
                     <div class="posty-theme__post--card-other-content rounded line-clamp-3" :style="`background-image: url('${previous.thumbnail}')`">
                       {{ previous.title }}
                     </div>
@@ -204,7 +204,7 @@ export default {
   methods: {
     fetchPost() {
       this.loading = true
-      this.$api.badasoPostPublic
+      this.$api.skijasiPostPublic
         .fetchPost({
           slug: this.$page.props.slug
         })
@@ -227,7 +227,7 @@ export default {
       }
     },
     fetchComment() {
-      this.$api.badasoPostPublic
+      this.$api.skijasiPostPublic
         .fetchComment({
           slug: this.$page.props.slug,
           page: this.page,
@@ -244,7 +244,7 @@ export default {
         });
     },
     postComment() {
-      this.$api.badasoPostPublic
+      this.$api.skijasiPostPublic
         .addComment({
           postId: this.post.id,
           content: this.comment,

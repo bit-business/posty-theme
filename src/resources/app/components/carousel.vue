@@ -15,7 +15,7 @@
               <h3 class="posty-theme__showcase--wrap posty-theme__showcase--title">{{ item.title }}</h3>
             </vs-col>
             <vs-col vs-w="12" class="mt-16">
-              <Link :href="route('badaso.posty-theme.post', item.slug)" style="color: white">
+              <Link :href="route('skijasi.posty-theme.post', item.slug)" style="color: white">
                 <vs-button color="white" type="border" size="small" class="posty-theme__showcase--readmore">BACA SELENGKAPNYA</vs-button>
               </Link>
             </vs-col>

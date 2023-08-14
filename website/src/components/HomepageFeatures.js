@@ -4,8 +4,8 @@ import styles from "./HomepageFeatures.module.css";
 
 const FeatureList = [
   {
-    title: "Module For Badaso",
-    image: require("../../static/img/badaso-logo.png").default,
+    title: "Module For Skijasi",
+    image: require("../../static/img/skijasi-logo.png").default,
     description: (
       <>
         It is a long established fact that a reader will be distracted by the
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: "Create Blog Faster",
-    image: require("../../static/img/badaso-post-logo.png").default,
+    image: require("../../static/img/skijasi-post-logo.png").default,
     description: (
       <>
         It is a long established fact that a reader will be distracted by the
@@ -24,8 +24,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Powered by Uasoft",
-    image: require("../../static/img/uasoft-logo.png").default,
+    title: "Powered by Nadzorservera",
+    image: require("../../static/img/nadzorservera-logo.png").default,
     description: (
       <>
         It is a long established fact that a reader will be distracted by the

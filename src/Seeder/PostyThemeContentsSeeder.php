@@ -1,11 +1,11 @@
 <?php
 
-namespace Database\Seeders\Badaso\PostyTheme;
+namespace Database\Seeders\Skijasi\PostyTheme;
 
 use Exception;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Uasoft\Badaso\Module\Content\Models\Content;
+use Nadzorservera\Skijasi\Module\Content\Models\Content;
 
 class PostyThemeContentsSeeder extends Seeder
 {

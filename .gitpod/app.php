@@ -166,10 +166,10 @@ return [
          * Package Service Providers...
          */
 
-        "Uasoft\\Badaso\\Providers\\BadasoServiceProvider",
-        "Uasoft\\Badaso\\Module\\Post\\Providers\\BadasoPostModuleServiceProvider",
-        "Uasoft\\Badaso\\Theme\\PostyTheme\\Providers\\PostyThemeProvider",
-        "Uasoft\\Badaso\\Module\\Content\\Providers\\BadasoContentModuleServiceProvider",
+        "Nadzorservera\\Skijasi\\Providers\\SkijasiServiceProvider",
+        "Nadzorservera\\Skijasi\\Module\\Post\\Providers\\SkijasiPostModuleServiceProvider",
+        "Nadzorservera\\Skijasi\\Theme\\PostyTheme\\Providers\\PostyThemeProvider",
+        "Nadzorservera\\Skijasi\\Module\\Content\\Providers\\SkijasiContentModuleServiceProvider",
 
         /*
          * Application Service Providers...

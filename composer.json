@@ -28,7 +28,7 @@
         "skijasi/core": "*",
         "skijasi/post-module": "*",
         "skijasi/content-module": "*",
-        "inertiajs/inertia-laravel": "^0.6.3",
+        "inertiajs/inertia-laravel": "*",
         "tightenco/ziggy": "^1.4"
     },
     "authors": [
